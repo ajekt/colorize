@@ -62,3 +62,10 @@ Adds a strike through the selected text.
 | magenta |
 | cyan |
 | white |
+## getLength( string )
+Returns the length of actual text inside a string which uses colorize syntax.</br>
+Example:</br>
+```javascript
+console.log('<red>red</red>'.getLength());
+// Output: 3
+```

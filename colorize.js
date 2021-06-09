@@ -85,4 +85,20 @@ String.prototype.colorize = function() {
   return colorize(this);
 }
 
+function getLength(string) {
+  let a = string.match(/<([^>]*)>/g);
+  let res = string.length;
+  a.forEach(t => {
+    let len = t.length;
+    t = t.substring(1, t.length-1);
+    if (t.startsWith('/')) t = t.substring(1);
+    if (Object.keys(tags).includes(t)) res -= len;
+  })
+  return res;
+}
+
+String.prototype.getLength = function() {
+  return getLength(this);
+}
+
 module.exports = colorize;
