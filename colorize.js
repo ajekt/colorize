@@ -1,9 +1,8 @@
-// colorize.js
-// --------------------------
-// Liscence: MIT
-// Developed by: ajekt
-// Date created: 7th Jun 2021
-// --------------------------
+/* colorize.js
+ * ------------------------
+ * MIT License
+ * Copyright (c) Ajekt 2021
+ */
 
 
 const tags = {

@@ -14,6 +14,13 @@ colorize('<yellow>Hello <magenta>World!<clear>');
 // OR
 '<yellow>Hello <magenta>World!<clear>'.colorize();
 ```
+# Install
+To use colorize simply download the script from the github website directly or from the command line:</br>
+```
+wget https://raw.githubusercontent.com/ajekt/colorize/master/colorize.js
+// OR
+curl https://raw.githubusercontent.com/ajekt/colorize/master/colorize.js > colorize.js
+```
 # Tags
 > **NOTE** Colorize is still pretty rough around the edges, if you find any problems make an issue or pull request.
 
