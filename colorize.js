@@ -1,3 +1,11 @@
+// colorize.js
+// --------------------------
+// Liscence: MIT
+// Developed by: ajekt
+// Date created: 7th Jun 2021
+// --------------------------
+
+
 const tags = {
   bright: function(disable) {
     Object.keys(this).forEach(t => {
@@ -88,6 +96,7 @@ String.prototype.colorize = function() {
 function getLength(string) {
   let a = string.match(/<([^>]*)>/g);
   let res = string.length;
+  if (!a) return res;
   a.forEach(t => {
     let len = t.length;
     t = t.substring(1, t.length-1);
